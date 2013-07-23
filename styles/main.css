@@ -18,7 +18,9 @@ section .init_content .slogan {
 }
 section .init_content .logo h1,
 section .init_content .slogan h1,
-section .init_content .descr div {
+section .init_content .descr div,
+section .content div,
+.be-the-first form {
     margin:0 auto;
     width:53%;
     text-align: left;
@@ -33,6 +35,9 @@ section .init_content .slogan h1 {
 section .init_content .descr div {
     color: rgba(49, 49, 49, 1);
     padding: 83px 0;
+}
+section .content div,
+section .init_content .descr div {
     font-size:25px;
     line-height:30px;
     text-align: justify;
@@ -50,7 +55,7 @@ section .init_content .descr {
 }
 section .title {
     font-size: 78px;
-    margin-top: 80px;
+    margin-top: 100px;
     color: #fff;
 }
 section .content {
@@ -63,7 +68,7 @@ section .content {
     position: absolute;
     overflow: hidden;
     right: auto;
-    top: 210px;
+    top: 230px;
     z-index: 10;
     height: 100px;
     width: 100%;
@@ -98,7 +103,7 @@ section .content {
 .be-the-first {
     position: fixed;
     bottom: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .8);
     color: #efefef;
     width: 100%;
     padding: 10px 0;
@@ -111,6 +116,8 @@ section .content {
 .be-the-first form {
     display: none;
     cursor: auto;
+    text-align: left;
+    line-height: 40px;
 }
 .be-the-first.shown form {
     display: block;

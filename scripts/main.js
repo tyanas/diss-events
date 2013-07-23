@@ -62,9 +62,12 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     });
 
     $('.be-the-first').on('click', function(event){
-        if (event.target.nodeName == 'INPUT') {
+        if (event.target.nodeName == 'INPUT' || event.target.nodeName == 'LABEL') {
             if (event.target.type == 'submit') {
                 $(event.target).parents('form').submit();
+            } else if (event.target.type == 'checkbox' || event.target.nodeName == 'LABEL') {
+                event.stopPropagation();
+                return true;
             }
             return false;
         }
@@ -73,7 +76,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
         if ($(this).hasClass('shown')) {
             $(this).animate({'height': '30px'}, 300);
         } else {
-            $(this).animate({'height': '70px'}, 700);
+            $(this).animate({'height': '80%'}, 700);
         }
         $(this).toggleClass('shown');
         return false;
