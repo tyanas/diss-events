@@ -22,7 +22,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 (function($){
     $('.menu').on('click',function(event){
         var slide_data = event.target.dataset;
-        if (slide_data.length) {
+        if (slide_data.h != undefined) {
             // ignore clicks outside a
             Reveal.slide(slide_data.h, slide_data.v)
         }

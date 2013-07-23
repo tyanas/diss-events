@@ -15,12 +15,12 @@ section .content {
 }
 .menu {
     position: absolute;
-    overflow: scroll;
+    overflow: hidden;
     right: auto;
     top: 50px;
     z-index: 10;
     height: 100px;
-    width: 520px;
+    width: 550px;
     left: 29%;
 }
 .menu a {
