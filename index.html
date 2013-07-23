@@ -25,6 +25,7 @@
                         </div>
                     </section>
                     <section 
+                        data-controller="first"
                         data-background-transition="page" 
                         data-background="images/1.jpg" >
                         <div class="content">
@@ -34,6 +35,7 @@
                 </section>
 
                 <section 
+                    data-controller="second"
                     data-background-transition="slide" 
                     data-background="images/2.jpg" >
                     <div class="content">
@@ -41,6 +43,7 @@
                     </div>
                 </section>
                 <section 
+                    data-controller="third"
                     data-background-transition="slide" 
                     data-background="images/3.jpg" >
                     <div class="content">
@@ -53,13 +56,13 @@
 		</div>
         
         <div class="menu hidden">
-            <a href="" data-panel="first" class="active">
+            <a href="" id="first" class="active">
                 First 
             </a>
-            <a href="" data-panel="second" class="">
+            <a href="" id="second" class="">
                 Second 
             </a>
-            <a href="" data-panel="third" class="">
+            <a href="" id="third" class="">
                 Third 
             </a>
             <div class="clear"></div>

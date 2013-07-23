@@ -16,7 +16,7 @@ section .content {
     z-index: 10;
     height: 100px;
     width: 520px;
-    left: 30%;
+    left: 29%;
 }
 .menu a {
     display: block;
@@ -32,7 +32,7 @@ section .content {
 .menu a.active,
 .menu a:active,
 .menu a:hover {
-    background: rgba(256, 256, 256, .6);
+    background: rgba(256, 256, 256, .8);
 }
 .be-the-first {
     position: fixed;
