@@ -49,9 +49,11 @@ section .content {
     z-index: 20;
     height: 30px;
     overflow: hidden;
+    cursor: pointer;
 }
 .be-the-first form {
     display: none;
+    cursor: auto;
 }
 .be-the-first.shown form {
     display: block;
