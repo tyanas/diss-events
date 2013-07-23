@@ -17,10 +17,12 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
         slide_id = slide.dataset.controller;
     if (slide_id == undefined ) {
         $('.menu').hide();
+        $('.be-the-first').hide();
     } else {
         $('.menu a').removeClass('active');
         $('.menu a#' + slide_id).addClass('active');
         $('.menu').show();
+        $('.be-the-first').show();
     }
 } );
 

@@ -6,13 +6,47 @@ body {
     padding: 0;
 }
 section .init_content .logo {
-    background: rgb(0, 91, 86);
-    color: #fff;
-    padding: 20px;
+    background: #fff;
+    color: rgba(49, 49, 49, 1);
+    padding: 31px 0;
 
 }
-section .init_content {
+section .init_content .slogan {
+    margin: 160px 0 80px;
+    padding:0;
+    background: none;
+}
+section .init_content .logo h1,
+section .init_content .slogan h1,
+section .init_content .descr div {
+    margin:0 auto;
+    width:53%;
     text-align: left;
+}
+section .init_content .logo h1 {
+    font-size: 48px;
+}
+section .init_content .slogan h1 {
+    font-size: 52px;
+    text-shadow: #aaa 0px 1px 1px;
+}
+section .init_content .descr div {
+    color: rgba(49, 49, 49, 1);
+    padding: 83px 0;
+    font-size:25px;
+    line-height:30px;
+    text-align: justify;
+}
+section .init_content .holder {
+    margin:0;
+    padding:0;
+    background:none;
+}
+section .init_content {
+    color:#fff;
+}
+section .init_content .descr {
+    background: rgba(256, 256, 256, .8);
 }
 section .title {
     font-size: 78px;
