@@ -28,4 +28,20 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
         }
         return false;
     });
+    var fix_height;
+    if (!fix_height) {
+        fix_height = $('.be-the-first').height();
+    }
+    $('.be-the-first').on('click', function(event){
+        if (event.target.nodeName == 'INPUT') return false;
+        event.stopPropagation();
+        event.preventDefault();
+        if ($(this).hasClass('shown')) {
+            $(this).animate({'height': '30px'}, 300);
+        } else {
+            $(this).animate({'height': '70px'}, 700);
+        }
+        $(this).toggleClass('shown');
+        return false;
+    });
 })(jQuery);

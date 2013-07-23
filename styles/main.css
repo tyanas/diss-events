@@ -41,17 +41,27 @@ section .content {
 }
 .be-the-first {
     position: fixed;
-    bottom:0;
+    bottom: 0;
     background: rgba(0, 0, 0, .6);
     color: #efefef;
-    width:100%;
-    padding:10px 100px;
+    width: 100%;
+    padding: 10px 100px;
+    z-index: 20;
+    height: 30px;
+    overflow: hidden;
 }
-.be-the-first .content {
+.be-the-first form {
+    display: none;
+}
+.be-the-first.shown form {
+    display: block;
+}
+.be-the-first .content h2 {
     padding:0;
     margin:0;
     font-weight: normal;
     font-size: 100%;
+    padding: 10px 0;
 }
 .clear {
     clear:both
