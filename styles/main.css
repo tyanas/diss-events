@@ -1,3 +1,6 @@
+body {
+    font-family: 'Muli', sans-serif;
+}
 section .init_content {
     margin-top: 250px;
     text-align: left;
@@ -5,12 +8,13 @@ section .init_content {
 .menu,
 .be-the-first,
 section .content {
-    font-family: Helvetica, Arial, sans-serif;
+    /*font-family: Helvetica, Arial, sans-serif;
+     */
 }
 section .content {
     margin-top: 250px;
     padding: 50px;
-    background: rgba(256, 256, 256, .9);
+    background: rgba(256, 256, 256, .8);
     text-align: left;
 }
 .menu {
@@ -27,7 +31,7 @@ section .content {
     display: block;
     width: 100px;
     padding: 25px;
-    background: rgba(238, 238, 238, .6);
+    background: rgba(238, 238, 238, .8);
     text-decoration: none;
     margin: 0 20px 0 0;
     float: left;
@@ -37,7 +41,7 @@ section .content {
 .menu a.active,
 .menu a:active,
 .menu a:hover {
-    background: rgba(256, 256, 256, .8);
+    background: rgba(256, 256, 256, 1);
 }
 .be-the-first {
     position: fixed;
