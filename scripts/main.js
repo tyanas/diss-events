@@ -15,7 +15,6 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     var cur = Reveal.getIndices(),
         slide = Reveal.getCurrentSlide(),
         slide_id = slide.dataset.controller;
-    $('.menu').css('top', parseInt(0.37*$(window).height())+'px');
     if (slide_id == undefined ) {
         $('.menu').hide();
     } else {
