@@ -2,6 +2,11 @@ section .init_content {
     margin-top: 250px;
     text-align: left;
 }
+.menu,
+.be-the-first,
+section .content {
+    font-family: Helvetica, Arial, sans-serif;
+}
 section .content {
     margin-top: 250px;
     padding: 50px;
@@ -46,7 +51,6 @@ section .content {
     padding:0;
     margin:0;
     font-weight: normal;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 100%;
 }
 .clear {

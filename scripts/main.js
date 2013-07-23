@@ -17,3 +17,12 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
         $('.menu').show();
     }
 } );
+
+
+(function($){
+    $('.menu').on('click',function(event){
+        var slide_data = event.target.dataset;
+        Reveal.slide(slide_data.h, slide_data.v)
+        return false;
+    });
+})(jQuery);
