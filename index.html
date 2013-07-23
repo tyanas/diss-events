@@ -6,7 +6,7 @@
 
 		<title>Eventor</title>
 
-        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
 
 		<link rel="stylesheet" href="styles/vendor/reveal.min.css">
 		<!--link rel="stylesheet" href="styles/vendor/theme/serif.css" id="theme"-->
@@ -23,13 +23,15 @@
                     <section 
                         data-background="#f9f9f9">
                         <div class="init_content">
-                            <h1>Eventor*</h1>
+                            <div class="logo"><h1>Tipster</h1></div>
+                            <h1>Have a good time</h1>
                         </div>
                     </section>
                     <section 
                         data-controller="first"
                         data-background-transition="page" 
-                        data-background="images/1.jpg" >
+                        data-background="images/girls.png" >
+                        <h1 class="title">How are we different?</h1>
                         <div class="content">
                             1st Horizontal Slide
                         </div>
@@ -39,7 +41,8 @@
                 <section 
                     data-controller="second"
                     data-background-transition="slide" 
-                    data-background="images/2.jpg" >
+                    data-background="images/country.png" >
+                    <h1 class="title">How are we different?</h1>
                     <div class="content">
                         2nd Horizontal Slide
                     </div>
@@ -47,7 +50,8 @@
                 <section 
                     data-controller="third"
                     data-background-transition="slide" 
-                    data-background="images/3.jpg" >
+                    data-background="images/felix.png" >
+                    <h1 class="title">How are we different?</h1>
                     <div class="content">
                         3rd Horizontal Slide
                     </div>
@@ -58,20 +62,14 @@
 		</div>
         
         <div class="menu hidden">
-            <a href="" id="first" class="active" data-h="0" data-v="1">
-                First 
-            </a>
-            <a href="" id="second" class="" data-h="1" data-v="0">
-                Second 
-            </a>
-            <a href="" id="third" class="" data-h="2" data-v="0">
-                Third 
-            </a>
+            <a href="" id="first" class="active" data-h="0" data-v="1">&nbsp;</a>
+            <a href="" id="second" class="" data-h="1" data-v="0">&nbsp;</a>
+            <a href="" id="third" class="" data-h="2" data-v="0">&nbsp;</a>
             <div class="clear"></div>
         </div>
         <div class="be-the-first">
             <div class="content">
-                <h2>*Be The First</h2>
+                <h2>Be the first to test out the service</h2>
                 <form data-action="https://eventor.firebaseIO.com/">
                     Get the latest news 
                     <input name="mail" type="text" placeholder="name@example.com" size="40">

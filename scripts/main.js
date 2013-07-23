@@ -5,6 +5,7 @@ Reveal.initialize({
     transition: 'linear',
     // create 100% width content 
     width: '100%',
+    height: '100%',
     margin: 0,
     minScale:1,
 });
@@ -14,7 +15,8 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     var cur = Reveal.getIndices(),
         slide = Reveal.getCurrentSlide(),
         slide_id = slide.dataset.controller;
-    if (!slide_id) {
+    $('.menu').css('top', parseInt(0.37*$(window).height())+'px');
+    if (slide_id == undefined ) {
         $('.menu').hide();
     } else {
         $('.menu a').removeClass('active');

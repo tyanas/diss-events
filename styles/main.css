@@ -1,18 +1,26 @@
 body {
     font-family: 'Muli', sans-serif;
 }
+.reveal .slides>section,
+.reveal .slides>section>section {
+    padding: 0;
+}
+section .init_content .logo {
+    background: rgb(0, 91, 86);
+    color: #fff;
+    padding: 20px;
+
+}
 section .init_content {
-    margin-top: 250px;
     text-align: left;
 }
-.menu,
-.be-the-first,
-section .content {
-    /*font-family: Helvetica, Arial, sans-serif;
-     */
+section .title {
+    font-size: 78px;
+    margin-top: 80px;
+    color: #fff;
 }
 section .content {
-    margin-top: 250px;
+    margin-top: 150px;
     padding: 50px;
     background: rgba(256, 256, 256, .8);
     text-align: left;
@@ -21,20 +29,20 @@ section .content {
     position: absolute;
     overflow: hidden;
     right: auto;
-    top: 50px;
+    top: 253px;
     z-index: 10;
     height: 100px;
-    width: 550px;
-    left: 29%;
+    width: 100%;
+    padding: 0 auto;
+    text-align: center;
 }
 .menu a {
-    display: block;
+    display: inline-block;
     width: 100px;
     padding: 25px;
     background: rgba(238, 238, 238, .8);
     text-decoration: none;
     margin: 0 20px 0 0;
-    float: left;
     color: #333;
 }
 
@@ -43,17 +51,19 @@ section .content {
 .menu a:hover {
     background: rgba(256, 256, 256, 1);
 }
+
 .be-the-first {
     position: fixed;
     bottom: 0;
     background: rgba(0, 0, 0, .6);
     color: #efefef;
     width: 100%;
-    padding: 10px 100px;
+    padding: 10px 0;
     z-index: 20;
     height: 30px;
     overflow: hidden;
     cursor: pointer;
+    font-size: 23px;
 }
 .be-the-first form {
     display: none;
@@ -68,6 +78,7 @@ section .content {
     font-weight: normal;
     font-size: 100%;
     padding: 10px 0;
+    text-align: center;
 }
 .clear {
     clear:both
