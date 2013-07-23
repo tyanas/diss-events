@@ -1,8 +1,13 @@
- Reveal.initialize({
-                controls: false,
-                center: false,
-                mouseWheel: true,
-                transition: 'linear'});
+Reveal.initialize({
+    controls: false,
+    center: false,
+    mouseWheel: true,
+    transition: 'linear',
+    // create 100% width content 
+    width: '100%',
+    margin: 0,
+    minScale:1,
+});
 
 Reveal.addEventListener( 'slidechanged', function( event ) {
     // event.previousSlide, event.currentSlide, event.indexh, event.indexv
@@ -29,7 +34,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     if (!fix_height) {
         fix_height = $('.be-the-first').height();
     }
-    $('.menu').on('click',function(event){
+    $('.menu').on('click', function(event){
         var slide_data = event.target.dataset;
         if (slide_data.h != undefined) {
             // ignore clicks outside a

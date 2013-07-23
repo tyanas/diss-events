@@ -10,7 +10,7 @@ section .content {
 section .content {
     margin-top: 250px;
     padding: 50px;
-    background: rgba(256, 256, 256, .3);
+    background: rgba(256, 256, 256, .9);
     text-align: left;
 }
 .menu {
