@@ -22,7 +22,10 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
 (function($){
     $('.menu').on('click',function(event){
         var slide_data = event.target.dataset;
-        Reveal.slide(slide_data.h, slide_data.v)
+        if (slide_data.length) {
+            // ignore clicks outside a
+            Reveal.slide(slide_data.h, slide_data.v)
+        }
         return false;
     });
 })(jQuery);
