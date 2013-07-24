@@ -18,14 +18,17 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     if (slide_id == undefined ) {
         $('.menu').hide();
         $('.be-the-first').hide();
+        $('.different').show();
     } else {
         $('.menu a').removeClass('active');
         $('.menu a#' + slide_id).addClass('active');
         $('.menu').show();
         $('.be-the-first').show();
+        $('.different').hide();
     }
 } );
 
+//Reveal.slide(0,1);
 
 (function($){
     var fix_height;
@@ -53,12 +56,17 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
             var root = new Firebase(this.dataset.action);
             root.push({'mail': mail});
 
-            $('<span>').text('Thanks!').prependTo($('form .info')).fadeOut(5000);
+            $('<span>').text('Thanks!').prependTo($('.thanks')).fadeOut(5000);
         } else {
             $('<span class="error">').text('Error in e-mail! Try once more.')
-                .prependTo($("form .info"));
+                .prependTo($(".thanks"));
         }
         return false;
+    });
+
+    $('.different').on('click', function(event){
+        event.stopPropagation();
+        Reveal.slide(0,1);
     });
 
     $('.be-the-first').on('click', function(event){
@@ -74,9 +82,11 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
         event.stopPropagation();
         event.preventDefault();
         if ($(this).hasClass('shown')) {
-            $(this).animate({'height': '30px'}, 300);
+            $(this).animate({'height': '82px'}, 300);
+            $('.keep h2').fadeOut();
         } else {
             $(this).animate({'height': '80%'}, 700);
+            $('.keep h2').fadeIn();
         }
         $(this).toggleClass('shown');
         return false;
