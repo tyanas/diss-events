@@ -50,11 +50,12 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     });
 
     $('.be-the-first form').submit(function(event) {
-        var mail = $(this).find('[name=mail]').val();
+        var mail = $(this).find('[name=mail]').val(),
+            is_curator = $('form [name=is_curator]').is(':checked');
         $('form .info').html('');
         if (is_valid(mail)) {
             var root = new Firebase(this.dataset.action);
-            root.push({'mail': mail});
+            root.push({'mail': mail, 'is_curator': is_curator});
 
             $('<span>').text('Thanks!').prependTo($('.thanks')).fadeOut(5000);
         } else {
