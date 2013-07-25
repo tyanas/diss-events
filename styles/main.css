@@ -135,6 +135,7 @@ section .content i {
 .be-the-first .launching p {
     margin:0 0 7px 0;
 }
+.be-the-first .thanks,
 .be-the-first .launching,
 .be-the-first form {
     width:410px;
@@ -142,6 +143,10 @@ section .content i {
 }
 .be-the-first .launching {
     margin-bottom:2em;
+}
+.be-the-first .thanks {
+    margin-top:1em;
+    font-size:20px;
 }
 .be-the-first form {
     display: none;

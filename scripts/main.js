@@ -57,10 +57,10 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
             var root = new Firebase(this.dataset.action);
             root.push({'mail': mail, 'is_curator': is_curator});
 
-            $('<span>').text('Thanks!').prependTo($('.thanks')).fadeOut(5000);
+            $('.thanks .correct').show();
         } else {
-            $('<span class="error">').text('Error in e-mail! Try once more.')
-                .prependTo($(".thanks"));
+            $('.thanks .correct').hide();
+            $('.thanks .error').show().fadeOut(4000);
         }
         return false;
     });
