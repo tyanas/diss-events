@@ -166,9 +166,15 @@ section .content i {
 .be-the-first form input.boxed {
     height:25px;
     padding: 2px 4px;
+    margin:0;
+    display:inline-block;
+    vertical-align:middle;
+}
+.be-the-first form input.text {
+    width:300px;
 }
 .be-the-first form input.submit {
-    padding: 5px 4px;
+    padding: 0 4px;
     height: 33px;
     border-left:0px;
 }
