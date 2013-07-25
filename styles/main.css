@@ -137,6 +137,12 @@ section .content i {
     -webkit-align-items: center;
     align-items: center;
 }
+.be-the-first .launching {
+    margin-bottom:2em;
+}
+.be-the-first .launching p {
+    margin:0 0 7px 0;
+}
 .be-the-first .launching,
 .be-the-first form {
     width:50%;
@@ -154,6 +160,12 @@ section .content i {
     border: 1px solid #fff;
     background: #000;
     color:#fff;
+    font-size: 20px;
+    line-height: 20px;
+    margin:0;
+}
+.be-the-first form label {
+    font-size: 20px;
 }
 .be-the-first form input.boxed {
     height:25px;

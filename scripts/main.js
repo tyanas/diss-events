@@ -28,7 +28,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     }
 } );
 
-Reveal.slide(0,1);
+//Reveal.slide(0,1);
 
 (function($){
     var fix_height;
