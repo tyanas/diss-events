@@ -28,7 +28,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
     }
 } );
 
-//Reveal.slide(0,1);
+Reveal.slide(0,1);
 
 (function($){
     var fix_height;
@@ -69,6 +69,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
         Reveal.slide(0,1);
     });
 
+    // click in keep on eye on is area
     $('.be-the-first').on('click', function(event){
         if (event.target.nodeName == 'INPUT' || event.target.nodeName == 'LABEL') {
             if (event.target.type == 'submit') {
@@ -79,16 +80,17 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
             }
             return false;
         }
+        var bethefirst= $(this);
         event.stopPropagation();
         event.preventDefault();
-        if ($(this).hasClass('shown')) {
-            $(this).animate({'height': '82px'}, 300);
-            $('.keep h2').fadeOut();
-        } else {
-            $(this).animate({'height': '80%'}, 700);
+        if (bethefirst.hasClass('shown')) {
+            bethefirst.animate({'height': '82px'}, 300);
             $('.keep h2').fadeIn();
+        } else {
+            bethefirst.animate({'height': '80%'}, 700);
+            $('.keep h2').fadeOut();
         }
-        $(this).toggleClass('shown');
+        bethefirst.toggleClass('shown');
         return false;
     });
 
