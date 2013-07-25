@@ -88,7 +88,7 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
             bethefirst.animate({'height': '82px'}, 300);
             $('.keep h2').fadeIn();
         } else {
-            bethefirst.animate({'height': '80%'}, 700);
+            bethefirst.animate({'height': '94%'}, 700);
             $('.keep h2').fadeOut();
         }
         bethefirst.toggleClass('shown');
