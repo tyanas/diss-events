@@ -57,9 +57,9 @@ Reveal.addEventListener( 'slidechanged', function( event ) {
             var root = new Firebase(this.dataset.action);
             root.push({'mail': mail, 'is_curator': is_curator});
 
-            $('.thanks .correct').show();
+            $('.social .correct').show();
         } else {
-            $('.thanks .correct').hide();
+            $('.social .correct').hide();
             $('.thanks .error').show().fadeOut(4000);
         }
         return false;

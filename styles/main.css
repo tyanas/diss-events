@@ -93,17 +93,27 @@ section .content i {
     color: #333;
 }
 .menu a#second {
-    background-position-x: -144px;
+    background-position: -144px 0;
 }
 .menu a#third {
     margin:0;
-    background-position-x: -288px;
+    background-position: -288px 0;
 }
 
-.menu a.active,
-.menu a:active,
-.menu a:hover {
-    background-position-y: -104px;
+.menu a#fisrt.active,
+.menu a#first:active,
+.menu a#first:hover {
+    background-position: 0 -104px;
+}
+.menu a#second.active,
+.menu a#second:active,
+.menu a#second:hover {
+    background-position: -144px -104px;
+}
+.menu a#third.active,
+.menu a#third:active,
+.menu a#third:hover {
+    background-position: -288px -104px;
 }
 
 .different,
@@ -153,6 +163,7 @@ section .content i {
     cursor: auto;
     text-align: left;
     line-height: 40px;
+    margin-bottom:2em;
 }
 .be-the-first.shown form {
     display: block;
@@ -202,34 +213,36 @@ section .content i {
     text-align: center;
 }
 .clear {
-    clear:both
+    clear:both;
 }
 .hidden {
     display: none;
 }
-
-/* try flex! */
-.flex-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    
-    -ms-flex-flow:column nowrap;
-    -moz-flex-flow:column nowrap;
-    -webkit-flex-flow:column nowrap;
-    flex-flow:column nowrap;
-    -ms-justify-content: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -ms-align-items: center;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    align-items: center;
+.social p {
+    margin: 0 auto;
+    width:590px;
+    font-size: 20px;
+    margin-bottom:1em;
 }
+.social div {
+    margin: 0 auto 0;
+    width: 250px;
+}
+.social a {
+    display: inline-block;
+    width: 53px;
+    height: 53px;
+    padding: 0;
+    background: url(../images/social.png) 0 -65px no-repeat;
+    text-decoration: none;
+    margin: 0 29px 0 0;
+    color: #333;
+}
+.social a#tw {
+    background-position: -81px -65px;
+}
+.social a#fb {
+    margin:0;
+    background-position: -160px -65px;
+}
+
