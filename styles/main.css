@@ -100,7 +100,7 @@ section .content i {
     background-position: -288px 0;
 }
 
-.menu a#fisrt.active,
+.menu a#first.active,
 .menu a#first:active,
 .menu a#first:hover {
     background-position: 0 -104px;
